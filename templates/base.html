@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Satisfaction Survey</title>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    </head>
+
+    <body class="bg-secondary text-center">
+        {% for msg in get_flashed_messages() %}
+            <p>{{ msg }}</p>
+        {% endfor %}
+        {% block content %}
+        {% endblock %}
+
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://unpkg.com/bootstrap"></script>
+    </body>
+</html>
